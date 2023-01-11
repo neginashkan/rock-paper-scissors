@@ -1,0 +1,73 @@
+body {
+  background: #a26ecb 88.8%;
+  box-sizing: border-box;
+  font-family: Holtwood One SC;
+  /* background: #FDDBB2; */
+}
+main {
+  position: relative;
+}
+h1 {
+  text-align: center;
+  color: #deb4ff;
+}
+.rock-paper-scissors {
+  max-width: 90%;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.start-game-btn {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+}
+
+a {
+  text-align: center;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  background: #deb4ff;
+  color: #9002ff;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  padding: 12px 24px;
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+  width: 90px;
+}
+.btn-style {
+  width: 110px;
+}
+a:hover,
+a:focus {
+  color: #9002ff;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.rock {
+
+  border-radius: 51px;
+  transform: rotate(-129.97deg);
+}
+.paper {
+  border-radius: 41px;
+  transform: rotate(179.49deg);
+}
+.scissors {
+  border-radius: 34px;
+  transform: rotate(-142.57deg);
+}
+.container{
+  text-align: center;
+}
+.rock,.paper,.scissors{
+  width: 50%;
+}
