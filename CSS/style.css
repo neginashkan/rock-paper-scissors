@@ -7,15 +7,21 @@ body {
 main {
   position: relative;
 }
+.border-style,main{
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
 h1 {
   text-align: center;
   color: #deb4ff;
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 .rock-paper-scissors {
   max-width: 90%;
   border-radius: 20px;
   display: block;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .start-game-btn {
@@ -24,7 +30,7 @@ h1 {
   left: 50%;
 }
 
-a {
+button {
   text-align: center;
   display: block;
   font-size: 12px;
@@ -39,19 +45,22 @@ a {
   padding: 12px 24px;
   transition: all 200ms ease-in-out;
   text-decoration: none;
-  width: 90px;
 }
-.btn-style {
-  width: 110px;
+.scissors-btn{
+  width: 105px;
+
 }
-a:hover,
-a:focus {
+button:hover,
+button:focus {
   color: #9002ff;
   outline: none;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
+a:active{
+  color: #9002ff;
 
+}
 .rock {
 
   border-radius: 51px;
@@ -70,4 +79,51 @@ a:focus {
 }
 .rock,.paper,.scissors{
   width: 50%;
+}
+.computer-img,.user-img{
+  
+  width: 30%;
+}
+
+.rock-user{
+transform: rotate(-90.87deg);
+}
+.paper-user{
+  transform: rotate(-127deg);
+}
+.scissors-user{
+  transform: rotate(-90.8deg);
+}
+.rock-computer{
+  transform: rotate(92.05deg);
+}
+.paper-computer{
+  transform: rotate(58.27deg);
+}
+.scissors-computer{
+transform: rotate(95.64deg);
+}
+.choice-style{
+  color: #deb4ff;
+}
+.result{
+
+text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+.computer,.user{
+  background: #deb4ff;
+  color: #9002ff;
+  border-radius: 55.997px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
