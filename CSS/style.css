@@ -2,8 +2,11 @@ body {
   background: #a26ecb 88.8%;
   box-sizing: border-box;
   font-family: Holtwood One SC;
-  /* background: #FDDBB2; */
 }
+.user-choice-html,.result-html{
+  display: none;
+}
+
 main {
   position: relative;
 }
@@ -12,7 +15,7 @@ main {
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
 }
-h1 {
+h1,h3 {
   text-align: center;
   color: #deb4ff;
   text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
@@ -46,10 +49,6 @@ button {
   transition: all 200ms ease-in-out;
   text-decoration: none;
 }
-.scissors-btn{
-  width: 105px;
-
-}
 button:hover,
 button:focus {
   color: #9002ff;
@@ -82,7 +81,7 @@ a:active{
 }
 .computer-img,.user-img{
   
-  width: 30%;
+  width: 25%;
 }
 
 .rock-user{
@@ -127,3 +126,4 @@ text-shadow: 0 1px 0 #ccc,
   border-radius: 55.997px;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
+

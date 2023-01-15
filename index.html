@@ -31,7 +31,7 @@
         <button
           href="HTML/user_choice.html"
           id="start-game-btn"
-          class="start-game-btn"
+          class="start-game-btn w-20"
         >
           Start Game
         </button>
@@ -54,13 +54,22 @@
           </div>
           <div class="row buttons">
             <div class="col-4 text-center">
-              <button id="rock" class="btn-style ms-2 mb-3 game-btn " >Rock</button>
+              <button id="rock" class="btn-style ms-2 mb-3 game-btn w-75">
+                Rock
+              </button>
             </div>
             <div class="col-4 text-center gx-0">
-              <button id="paper" class="btn-style ms-1 game-btn" >Paper</button>
+              <button id="paper" class="btn-style ms-1 game-btn w-75">
+                Paper
+              </button>
             </div>
             <div class="col-4 text-center gx-0">
-              <button id="scissors" class="btn-style scissors-btn m-0 game-btn">Scissors</button>
+              <button
+                id="scissors"
+                class="btn-style scissors-btn m-0 game-btn w-75"
+              >
+                Scissors
+              </button>
             </div>
           </div>
         </div>
@@ -88,14 +97,21 @@
             </div>
           </div>
           <div class="row">
-            <div class="col choice-style mb-5 ms-2">
+            <div class="col-4 choice-style mb-5 ms-2 p-1">
               yours:
               <div id="user" class="user"></div>
             </div>
-            <div class="col"><h1 class="result" id="result"></h1></div>
-            <div class="col choice-style mb-5 me-1">
+            <div class="col-3"><h3 class="result" id="result"></h3></div>
+            <div class="col-4 choice-style mb-5 me-1">
               computers:
               <div id="computer" class="computer"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button class="try-agin-btn w-100 m-auto" id="try-agin-btn">
+                try agin
+              </button>
             </div>
           </div>
         </div>
